@@ -10,16 +10,22 @@ import RequireAuth from './routes/RequireAuth';
 import "./styles/main.scss"
 import "./styles/_themes.scss"
 import "./styles/common.scss"
+import { ThemeProvider } from './context/ThemeContext'
 function App() {
 
+
   return (
+    <ThemeProvider>
     <Routes>
+
+
       <Route path='/' element={<Home />} />
       <Route path="/admin/login" element={<AuthRedirectRoute Component={AdminLogin} />} />
 
       <Route path="/admin/post" element={<RequireAuth Component={AdminPost} />} />
       <Route path='*' element={<Notfound />} />
     </Routes>
+    </ThemeProvider>
   )
 }
 

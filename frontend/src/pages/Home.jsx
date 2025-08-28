@@ -5,9 +5,12 @@ import Header from '../components/home/Header'
 import Work from '../components/home/Work'
 import Contact from '../components/home/Contact'
 import Footer from '../components/home/Footer'
+
 const Home = () => {
+
     return (
         <div>
+        
             <Header />
             <main>
                 <section id='Hero'>

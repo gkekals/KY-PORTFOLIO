@@ -38,12 +38,13 @@
                     }
 
                     &:nth-child(even) {
-                        background-color: var(--gray300);
+                        background-color: var(--gray100);
                     }
-                    &:hover{
+                    &:hover {
                         background-color: var(--primary);
                         color: var(--bg);
                     }
+
                 }
             }
         }

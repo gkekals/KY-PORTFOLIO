@@ -1,0 +1,68 @@
+.footer {
+    width: 100vw;
+    min-width: 320px;
+    background: #181818; // 기본 다크 배경
+    color: #fff;
+    padding: 0;
+
+    &.dark {
+        background: #fff; // 다크모드에서 폰트와 배경 반전
+        color: #000;
+
+        .right a {
+            color: #000;
+        }
+
+        .right a:hover {
+            color: #555;
+        }
+
+        .copyright {
+            color: #666;
+        }
+    }
+}
+
+.foot-inner {
+    width: 100%; // 고정폭 대신 유동적 반응형
+    max-width: 1920px; // 화면 크기 큰 경우만 1920px 제한
+    height: 158px;
+    margin: 0 auto;
+    padding: 0 48px; // 좌우 여백 추가: 아이콘이 항상 보이도록
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #b9b9b9;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.right a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.right a:hover {
+    color: #91baff;
+}

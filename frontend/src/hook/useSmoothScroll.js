@@ -3,7 +3,7 @@ import { useCallback } from "react";
 
 export default function useSmoothScroll(){
 
-    const scrollTo = useCallback((id)=>{
+    const scrollTo =useCallback((id)=>{
         const el = document.getElementById(id)
 
         if(el){
@@ -11,8 +11,8 @@ export default function useSmoothScroll(){
                 behavior:"smooth",
                 block:"start"
             })
-            
         }
     })
+
     return scrollTo
 }
